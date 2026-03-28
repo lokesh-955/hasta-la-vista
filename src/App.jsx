@@ -14,14 +14,12 @@ function App() {
   const [theme, setTheme] = useState("light");
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-  // Load login
   useEffect(() => {
     if (localStorage.getItem("isAuthenticated") === "true") {
-      setIsAuthenticated(true); 
+      setIsAuthenticated(true);
     }
   }, []);
 
-  // Load issues
   useEffect(() => {
     const stored = localStorage.getItem("govt_issues");
     if (stored) setIssues(JSON.parse(stored));
@@ -31,7 +29,6 @@ function App() {
     localStorage.setItem("govt_issues", JSON.stringify(issues));
   }, [issues]);
 
-  // Theme
   useEffect(() => {
     const savedTheme = localStorage.getItem("portal_theme");
     if (savedTheme) setTheme(savedTheme);
@@ -82,8 +79,7 @@ function App() {
   }
 
   return (
-
-    <Router basename ="/hasta-la-vista/">
+    <>
       <Header theme={theme} toggleTheme={toggleTheme} />
 
       <div className="container">
