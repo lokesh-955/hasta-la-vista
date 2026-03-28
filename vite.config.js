@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/hasta-la-vista/'
+  base: "/hasta-la-vista/"   // ✅ ADD THIS LINE
 })
