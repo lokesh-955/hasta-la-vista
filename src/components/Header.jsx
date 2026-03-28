@@ -10,6 +10,7 @@ function Header({ theme, toggleTheme }) {
       <div className="header">
         <div className="header-left">
           <h1>Hasta La Vista Portal</h1>
+          
           <p>Department of Public Grievances & Administrative Reforms</p>
         </div>
 

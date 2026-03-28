@@ -17,7 +17,7 @@ function App() {
   // Load login
   useEffect(() => {
     if (localStorage.getItem("isAuthenticated") === "true") {
-      setIsAuthenticated(true);
+      setIsAuthenticated(true); 
     }
   }, []);
 
