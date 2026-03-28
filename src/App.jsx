@@ -82,7 +82,8 @@ function App() {
   }
 
   return (
-    <>
+
+    <Router basename ="/hasta-la-vista/">
       <Header theme={theme} toggleTheme={toggleTheme} />
 
       <div className="container">
